@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "552257281579",
-    "project_id": "signupwithapp",
-    "storage_bucket": "signupwithapp.appspot.com"
+    "project_number": "142332336566",
+    "project_id": "loginsignupappwithfirebaseapp",
+    "storage_bucket": "loginsignupappwithfirebaseapp.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:552257281579:android:10a5df1321bed2c132546e",
+        "mobilesdk_app_id": "1:142332336566:android:02f7260deede74285cc917",
         "android_client_info": {
-          "package_name": "com.example.signupgooglefirebaseapp"
+          "package_name": "com.example.loginsignupwithfirebaseapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "552257281579-57sug7lqfa2o9q7u7vrtm2i8uk3i2pd5.apps.googleusercontent.com",
+          "client_id": "142332336566-4ib09662ejn71ktungcqestceuk50f51.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDD2uUaA5nFdjDaLV1npUs3zEO9uj49aBE"
+          "current_key": "AIzaSyC_bTSybSrkFJAFyuK4PWRjkxGpRlZPSe4"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "552257281579-57sug7lqfa2o9q7u7vrtm2i8uk3i2pd5.apps.googleusercontent.com",
+              "client_id": "142332336566-4ib09662ejn71ktungcqestceuk50f51.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
