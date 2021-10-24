@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginSignUpWithFirebaseApp">
         <activity android:name=".Logout"></activity>
-        <activity android:name=".signup"></activity>
+        <activity android:name=".Signup"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

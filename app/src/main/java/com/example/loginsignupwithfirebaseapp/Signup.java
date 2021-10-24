@@ -3,7 +3,7 @@ package com.example.loginsignupwithfirebaseapp;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class signup extends AppCompatActivity {
+public class Signup extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
