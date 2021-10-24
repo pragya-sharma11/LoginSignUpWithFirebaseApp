@@ -40,6 +40,7 @@
         android:layout_width="170dp"
         android:layout_height="77dp"
         android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="125dp"
         android:layout_marginBottom="230dp"
@@ -67,7 +68,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="141dp"
-        android:visibility="invisible"
-        android:layout_marginTop="290dp" />
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="142dp"
+        android:visibility="invisible" />
 </RelativeLayout>
