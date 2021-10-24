@@ -18,6 +18,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        e1 = findViewById(R.id.editText1);
+        e2 = findViewById(R.id.editText2);
+        b1 = findViewById(R.id.button1);
+        b2 = findViewById(R.id.button2);
+        p = findViewById(R.id.progressBar);
+        f1 = FirebaseAuth.getInstance();
     }
 }
