@@ -57,11 +57,19 @@ public class Signup extends AppCompatActivity {
                     return;
                 }
                 p.setVisibility(View.VISIBLE);
+                e1.setVisibility(View.INVISIBLE);
+                e2.setVisibility(View.INVISIBLE);
+                b1.setVisibility(View.INVISIBLE);
+                b2.setVisibility(View.INVISIBLE);
                 f1.createUserWithEmailAndPassword(s1,s2).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
-                            p.setVisibility(View.INVISIBLE);
+                            p.setVisibility(View.VISIBLE);
+                            e1.setVisibility(View.VISIBLE);
+                            e2.setVisibility(View.VISIBLE);
+                            b1.setVisibility(View.VISIBLE);
+                            b2.setVisibility(View.VISIBLE);
                             Toast.makeText(Signup.this, "Database updated", Toast.LENGTH_SHORT).show();
                             Intent i = new Intent(Signup.this, MainActivity.class);
                             startActivity(i);
@@ -69,6 +77,10 @@ public class Signup extends AppCompatActivity {
                         }
                         else {
                             p.setVisibility(View.INVISIBLE);
+                            e1.setVisibility(View.VISIBLE);
+                            e2.setVisibility(View.VISIBLE);
+                            b1.setVisibility(View.VISIBLE);
+                            b2.setVisibility(View.VISIBLE);
                             Toast.makeText(Signup.this, "Database not updated", Toast.LENGTH_SHORT).show();
                         }
                     }

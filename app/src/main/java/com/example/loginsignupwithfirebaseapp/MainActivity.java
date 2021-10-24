@@ -57,12 +57,19 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
                 p.setVisibility(View.VISIBLE);
-
+                e1.setVisibility(View.INVISIBLE);
+                e2.setVisibility(View.INVISIBLE);
+                b1.setVisibility(View.INVISIBLE);
+                b2.setVisibility(View.INVISIBLE);
                 f1.signInWithEmailAndPassword(s1,s2).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             p.setVisibility(View.INVISIBLE);
+                            e1.setVisibility(View.VISIBLE);
+                            e2.setVisibility(View.VISIBLE);
+                            b1.setVisibility(View.VISIBLE);
+                            b2.setVisibility(View.VISIBLE);
                             Toast.makeText(MainActivity.this, "Login Successfull", Toast.LENGTH_SHORT).show();
                             Intent i = new Intent(MainActivity.this, Logout.class);
                             startActivity(i);
@@ -70,6 +77,10 @@ public class MainActivity extends AppCompatActivity {
                         }
                         else {
                             p.setVisibility(View.INVISIBLE);
+                            e1.setVisibility(View.VISIBLE);
+                            e2.setVisibility(View.VISIBLE);
+                            b1.setVisibility(View.VISIBLE);
+                            b2.setVisibility(View.VISIBLE);
                             Toast.makeText(MainActivity.this, "Login Unsuccessful", Toast.LENGTH_SHORT).show();
                         }
                     }
