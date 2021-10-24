@@ -63,14 +63,14 @@ public class MainActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             p.setVisibility(View.INVISIBLE);
-                            Toast.makeText(MainActivity.this, "Database updated", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "Login Successfull", Toast.LENGTH_SHORT).show();
                             Intent i = new Intent(MainActivity.this, Logout.class);
                             startActivity(i);
                             finish();
                         }
                         else {
                             p.setVisibility(View.INVISIBLE);
-                            Toast.makeText(MainActivity.this, "Database not updated", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "Login Unsuccessful", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
